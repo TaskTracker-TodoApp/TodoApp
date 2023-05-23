@@ -37,9 +37,11 @@ import {
     const [priority, setOption] = useState("lOW");
 
     const [WhatToDo, setWhatToDo] = useState();
-
-
-    const [AllListsObj, setAllListsObj] = useState([]);
+let localData=[]
+    if(localStorage.data !=[] && localStorage.data !=null && localStorage.data !=undefined ){
+      localData=JSON.parse(localStorage.data)
+    }
+    const [AllListsObj, setAllListsObj] = useState(localData);
 
 
   function AddList(){
@@ -118,10 +120,15 @@ import {
         
         xx[index].array.map((e,i)=>{
           e.Id=i
-          })
+        }) 
 
+        const xxx = AllListsObj.filter(
+          (item) => item.array.length !== 0
+        );
+         
+   
+        setAllListsObj(xxx)
 
-        setAllListsObj(xx)
         array000=newItems
         console.log(AllListsObj)
 
@@ -270,12 +277,12 @@ import {
 
 
 )}
-  
+  {localStorage.setItem("data", JSON.stringify(AllListsObj))}
   </div>
   
   
   
-  
+
       </>
     );
   }
