@@ -108,7 +108,8 @@ let localData=[]
   }
   
   function DeleteRecipe(id,index){
-
+          
+    
 
         const newItems = AllListsObj[index].array.filter(
           (item) => item.Id !== id
@@ -131,6 +132,26 @@ let localData=[]
 
         array000=newItems
         console.log(AllListsObj)
+
+
+     
+
+
+          Swal.fire({
+            title: 'List has been deleted',
+            showClass: {
+              popup: 'animate__animated animate__fadeInDown'
+            },
+            hideClass: {
+              popup: 'animate__animated animate__fadeOutUp'
+            }
+          })
+
+
+       
+
+
+
 
   }
   
@@ -256,7 +277,13 @@ let localData=[]
                           <div className="CrudOperationsButtons">
                              <div><AiOutlineFolderView size="1.5rem" style={{cursor:"pointer"}}                                 /></div>
                              <div><AiFillEdit          size="1.5rem" style={{cursor:"pointer"}} onClick={()=>UpdateRecipe(e,index)}/></div>
+                             
+
+
                              <div><AiFillDelete        size="1.5rem" style={{cursor:"pointer"}} onClick={()=>DeleteRecipe(e.Id,index)}/></div>               
+                          
+                          
+                          
                           </div>
                       </div>
                  </div>
