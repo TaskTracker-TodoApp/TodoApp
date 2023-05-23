@@ -1,12 +1,17 @@
 .CrudFormContainer{
     width: 100%;
     display: flex;
+    align-items: center;
 }
-
+.AddNewListCard button{
+margin-left: 0.5rem;
+}
 .CrudFormCard{
     margin: 0 auto;
     background-color:#f8fafc;
     padding: 1rem;
+    border: 1px solid  black;
+
 }
 
 .taskCardContainer{

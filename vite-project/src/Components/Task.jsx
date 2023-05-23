@@ -18,7 +18,6 @@ import {
    import { AiOutlineFolderView } from "react-icons/ai";
    import { AiFillEdit } from "react-icons/ai";
   
-  
   let array000=[]
   export default function Task() {
   
@@ -149,25 +148,33 @@ import {
   
     <>
     
+   
 
+      <div className="CrudFormContainer">
+
+
+ 
+  
+      <Card className="CrudFormCard" color="transparent" shadow={false}>
+        <Typography variant="h4" color="blue-gray">
+          Add New List
+        </Typography>
+
+        <div className="AddNewListCard">
       <input style={{border:"1px solid black"}}
        type="text"
        value={WhatToDo}
        onChange={(e) => setWhatToDo(e.target.value)}
        />
-      <button onClick={()=>AddList()}>Add</button>
+       <Button onClick={()=>AddList()}>Add</Button>
+      {/* <button onClick={()=>AddList()}>Add New List</button> */}
+      </div>
 
-
-      <div className="CrudFormContainer">
-  
-      <Card className="CrudFormCard" color="transparent" shadow={false}>
-        <Typography variant="h4" color="blue-gray">
-          Add New Task
-        </Typography>
+      
+        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
         <Typography color="gray" className="mt-1 font-normal">
           Enter Task details .
         </Typography>
-        <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96">
           <div className="mb-4 flex flex-col gap-6">
             <Input size="lg" label="title" 
               value={valueTitle}
