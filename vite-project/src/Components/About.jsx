@@ -91,7 +91,7 @@ export const About = () => {
                     <div className="text-center text-gray-500 dark:text-gray-400">
                         <img
                             className="mx-auto mb-4 w-36 h-36 rounded-full"
-                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                            src=""
                             alt="Joseph Avatar"
                         />
                         <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -103,7 +103,7 @@ export const About = () => {
                     <div className="text-center text-gray-500 dark:text-gray-400">
                         <img
                             className="mx-auto mb-4 w-36 h-36 rounded-full"
-                            src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/sofia-mcguire.png"
+                            src=""
                             alt="Sofia Avatar"
                         />
                         <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

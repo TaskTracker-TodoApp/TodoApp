@@ -1,9 +1,9 @@
-// import { Bars3Icon} from '@heroicons/react/24/outline'
+import { Bars3Icon} from '@heroicons/react/24/outline'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "./taskTracker.png";
 const navigation = [
-  { name: 'Home', href: '/', current: true },
+  { name: 'Home', href: '/' ,current: true },
   { name: 'Task', href: '/Task', current: false },
   { name: 'About Us', href: '/About', current: false },
   { name: 'Contact Us', href: '/Contact', current: false },
@@ -19,23 +19,20 @@ export default function Nav() {
   return (
     <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
     <div className="flex lg:flex-1">
-      <a href="#" className="-m-1.5 p-1.5">
-        <span className="sr-only">Task Tracker</span>
-        <img
-          className="h-8 w-auto"
-          src={logo}
-          alt="" width="100px" height="100px"
-        />
+      <a href="#" className="-m-1.5 p-1.5 text-white  font-extrabold"  style={{backgroundColor:'#181d38'}}>
+        <span className="sr-only">Your Company</span>
+        TaskTracker
       </a>
     </div>
     <div className="flex lg:hidden">
       <button
         type="button"
         className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+        
         onClick={() => setMobileMenuOpen(true)}
       >
         <span className="sr-only">Open main menu</span>
-        {/* <Bars3Icon className="h-6 w-6" aria-hidden="true" /> */}
+        <Bars3Icon className="h-6 w-6" aria-hidden="true" />
       </button>
     </div>
     <div className="hidden lg:flex lg:gap-x-12">
@@ -45,10 +42,9 @@ export default function Nav() {
         </a>
       ))}
     </div>
-    <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-      
+    <div className="hidden lg:flex lg:flex-1 lg:justify-end font-bold">
+       <Link to='/Login'>Log In</Link>
     </div>
   </nav>
   )
 }
-
