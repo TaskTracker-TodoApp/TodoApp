@@ -67,6 +67,17 @@ let localData=[]
       }
 
     if(ButtonStatus=="create"){
+
+
+      Swal.fire({
+        title: 'List has been added',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
   
         array000.push(TaskObj)
 
@@ -86,9 +97,23 @@ let localData=[]
 
     setAllListsObj(AllTest)
   
+
+
+
+ 
+
+
     }else{
 
-  
+      Swal.fire({
+        title: 'List has been updated',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
   
       let NewTasksData=[...AllListsObj]
   
@@ -104,7 +129,7 @@ let localData=[]
           
        }
   
-    
+  
   }
   
   function DeleteRecipe(id,index){
