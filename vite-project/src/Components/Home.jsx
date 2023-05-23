@@ -57,7 +57,7 @@ function Home() {
                         style={{ backfaceVisibility: "hidden" }}
                     >
                         <img
-                            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(15).jpg"
+                            src="https://images.unsplash.com/photo-1598791318878-10e76d178023?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
                             className="block w-full"
                             alt="an image"
                         />
@@ -77,7 +77,7 @@ function Home() {
                         style={{ backfaceVisibility: "hidden" }}
                     >
                         <img
-                            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(22).jpg"
+                            src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
                             className="block w-full"
                             alt="an image"
                         />
@@ -95,7 +95,7 @@ function Home() {
                         style={{ backfaceVisibility: "hidden" }}
                     >
                         <img
-                            src="https://tecdn.b-cdn.net/img/Photos/Slides/img%20(23).jpg"
+                            src="https://images.unsplash.com/photo-1644329843283-640d00509d43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRvJTIwZG8lMjBsaXN0fGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                             className="block w-full"
                             alt="an image"
                         />
@@ -165,20 +165,7 @@ function Home() {
 
 
 
-            {/* section about */}
-            <section className="bg-white dark:bg-gray-900 shadow">
-                <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-                    <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                        <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-                        <p class="mb-4">As we know that we have a lot of tasks in our lives that need continuous follow-up and reminders to keep track of them in order to continue our work, and this is what we did.</p>
-                        <p> As we offer you a to-do list that helps you to divide your priorities, your daily tasks, and others.</p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4 mt-8">
-                        <img class="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
-                        <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
-                    </div>
-                </div>
-            </section >
+    
 
             <>
                 <div className="container px-6 py-10 mx-auto">
@@ -212,7 +199,7 @@ function Home() {
                                     Organize your tasks
                                 </h1>
                                 <p className="text-gray-500 dark:text-gray-300">
-                                    Determine your tasks and their importance in terms of priorities, "the most important, then the important, and the least important."
+                                    Determine your tasks and their importance in terms of priorities the most important, then the important, and the least important."
 
                                 </p>
                             </div>
@@ -317,7 +304,7 @@ function Home() {
                     ></iframe>
                 </div>
                 <div style={{ marginLeft: "25px", marginTop: "10px", width: "50%" }}>
-                    <div clclassNameass="font-light text-black-100 sm:text-lg dark:text-black-200">
+                    <div className="font-light text-black-100 sm:text-lg dark:text-black-200">
                         <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white mt-5">How do we organize our tasks and deal with them?</h2>
                         <p className="mb-4">And because organizing tasks and putting them in a list is important, we must clarify their writing to follow up on their implementation well and according to priorities.</p>
                         <p> In order to achieve the greatest possible achievement during our day, we must take advantage of it and empty all our tasks and arrange them correctly, and we are here to help you do that.</p>
