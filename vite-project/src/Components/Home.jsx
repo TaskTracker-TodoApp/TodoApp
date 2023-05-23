@@ -64,8 +64,8 @@ function Home() {
                         <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                             <h4 className="text-xl">Organize your work and life, finally</h4>
                             <p>Become focused, organized, and calm with Todoist. The world’s #1 task manager and to-do list</p>
-                            <Link to="Contact" > <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 mb-5">
-                                Learn more
+                            <Link to="/Login" > <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-5 mb-5">
+                              Log in to start
                             </button></Link>
                         </div>
                     </div>
@@ -279,7 +279,7 @@ function Home() {
                                 <div className="flex flex-wrap items-center justify-between">
                                     <Link
                                         target="_blank"
-                                        to="https://www.facebook.com"
+                                        to="Task"
                                         className="flex items-center flex-1 w-0"
                                     >
                                         <span className="flex p-2 bg-blue-800 rounded-lg">
