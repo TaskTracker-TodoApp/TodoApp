@@ -9,6 +9,8 @@ import Footer from './Components/Footer'
 import Contact from './Components/Contact'
 import { About } from './Components/About'
 import Task from './Components/Task'
+import Login from './Components/Login'
+import Signup from './Components/Signup'
 function App() {
   const [count, setCount] = useState(0)
 
@@ -18,10 +20,13 @@ function App() {
       <Router>
         <Nav />
         <Routes>
-          <Route path='Home' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='Contact' element={<Contact />} />
           <Route path='About' element={<About />} />
           <Route path='Task' element={<Task />} />
+          <Route path='/Login' element={<Login/>}/>
+          <Route path='/Signup' element={<Signup/>}/>
+          
        
         </Routes>
         <Footer />
